@@ -69,44 +69,18 @@ th, td {
 th {
 	background-color: #f2f2f2;
 }
+form{
+        	margin-top : 10%;
+        	border : 9px double black;
+        	padding : 70px;
+        }
 </style>
 </head>
 <body>
-	<h1>Delete Employee</h1>
+	
 
-	<h2>List of Employees</h2>
-	<table>
-		<tr>
-			<th>ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-		</tr>
-
-		<% 
-        Session session2 = FactoryProvider.getFactory().openSession();
-            
-            try {
-                session2.beginTransaction();
-                List<Employee> employees = session2.createQuery("from Employee").getResultList();
-                
-                for (Employee employee : employees) {
-        %>
-		<tr>
-			<td><%= employee.getId() %></td>
-			<td><%= employee.getFirstName() %></td>
-			<td><%= employee.getLastName() %></td>
-		</tr>
-		<%
-                }
-                session2.getTransaction().commit();
-            } finally {
-            	session2.close();
-            }
-        %>
-	</table>
-
-	<h2>Delete Employee</h2>
 	<form action="deleteEmployeeServlet" method="post">
+	<h1>Delete Employee</h1>
 		<label for="id">Employee ID:</label> <input type="text" name="id"
 			required> <input type="submit" value="Delete Employee">
 	</form>

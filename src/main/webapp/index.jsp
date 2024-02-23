@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <title>Employee Management</title>
     <style>
+    a{
+    
+            text-align: center;
+    
+    }
         /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-	    background-image: url('https://img.freepik.com/free-photo/top-view-happy-boss-day-concept_23-2148586494.jpg?w=996&t=st=1708399790~exp=1708400390~hmac=e685f058c45541c61b3bb6eb3df3c4e8aa0987730b4452c77cd3a1cf984abf54');
+	    background-image: url('http://wejungo.com/wp-content/uploads/2015/10/Dollarphotoclub_79940116.jpg');
+	    background-size:cover;
         }
         h1 {
             color: #333;
         }
         .operation-links {
-            margin-top: 20px;
+            margin-top: 60px;
+            margin-left: 200px;
+            
         }
         .operation-links a {
-            margin-right: 10px;
+            margin-right: 80px;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 10px 70px;
             background-color: black;
             color: white;
             border: 1px solid black;
-            border-radius: 5px;
+            border-radius: 6px;
         }
         .operation-links a:hover {
             background-color: white;
@@ -35,12 +43,18 @@
     </style>
 </head>
 <body>
-    <h1>Employee Management</h1>
+    <h1 style="text-align: center;">Employee Management</h1>
     
-    <div class="operation-links">
+    <div class="operation-links" style="text-align: center;">
         <a href="createEmployee.jsp">Create Employee</a>
+        </div>
+        <div class="operation-links" style="text-align: center;">
         <a href="listEmployees.jsp">List Employees</a>
+        </div>
+        <div class="operation-links" style="text-align: center;">
         <a href="updateEmployee.jsp">Update Employee</a>
+        </div>
+        <div class="operation-links" style="text-align: center;">
         <a href="deleteEmployee.jsp">Delete Employee</a>
     </div>
 </body>

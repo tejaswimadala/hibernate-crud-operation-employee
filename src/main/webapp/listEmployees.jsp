@@ -12,7 +12,8 @@
         /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://img.freepik.com/free-photo/business-people-blue-background_53876-101889.jpg?w=1060&t=st=1708400682~exp=1708401282~hmac=c51fc9a976163d0a18f912107407b40b60599d401e192128cc6c665b60e3282b');
+            background-image: url('https://catalystforbusiness.com/wp-content/uploads/2017/12/employees-success-1024x683.jpg');
+            background-size: cover;
         }
         h1 {
             color: #333;
@@ -47,11 +48,11 @@
     </style>
 </head>
 <body>
-    <h1>List of Employees</h1>
+    <h1 style="text-align: center;">List of Employees</h1>
     
     <table>
         <tr>
-            <th>ID</th>
+           <th>ID</th>
             <th>First Name</th>
             <th>Last Name</th>
         </tr>

@@ -41,12 +41,18 @@
             background-color: white;
             color: black;
         }
+        form{
+        	margin-top : 10%;
+        	border : 9px double black;
+        	padding : 70px;
+        }
     </style>
 </head>
 <body>
-    <h1>Create Employee</h1>
+  
     
     <form action="createEmployeeServlet" method="post">
+    	<h1>Create Employee</h1>
         <label for="firstName">First Name:</label>
         <input type="text" name="firstName" required>
         
